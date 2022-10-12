@@ -1,9 +1,7 @@
 package br.com.branch.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Aluno {
@@ -15,6 +13,9 @@ public class Aluno {
     private String nome;
 
     private int idade;
+
+    @OneToMany
+    private List<Materia> materias;
 
     public Aluno(){}
 

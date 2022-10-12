@@ -35,4 +35,8 @@ public class Aluno {
     public int getIdade() {
         return idade;
     }
+
+    public List<Materia> getMaterias() {
+        return materias;
+    }
 }

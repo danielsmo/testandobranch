@@ -14,14 +14,14 @@ public class Materia {
 
     private String nome;
 
-    private int duracao;
+    private int duracaos;
 
     public Materia(){}
 
 
     public Materia(String nome, int duracao) {
         this.nome = nome;
-        this.duracao = duracao;
+        this.duracaos = duracao;
     }
 
     public Long getId() {
@@ -33,6 +33,6 @@ public class Materia {
     }
 
     public int getDuracao() {
-        return duracao;
+        return duracaos;
     }
 }
